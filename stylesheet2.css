@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: #1f1f1f;
+}
+
+.menulist {
+    max-width: 21%;
+    background-color: black;
+    max-height: 120%;
+   
+}
+
+.menulist .head {
+    color: wheat;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 30x;
+    background: linear-gradient(30deg, #df0155, #ed4901)
+    
+}
+
+ol {
+    max-width: 100%;
+    list-style: none;
+    height: 100%;
+
+}
+
+#list {
+    text-decoration: none;
+    display: flex;
+    padding: 4vh;
+
+}
+
+ol li {
+    display: block;
+    letter-spacing: 1px;
+    padding: 15px 10px;
+    transition: 0.3s;
+    overflow: hidden;
+    text-transform: capitalize;
+    text-decoration: none;
+
+}
+
+ol li i {
+    width: 70px;
+    font-size: 25px;
+    text-align: center;
+
+
+}
+
+ol li:hover {
+    background: #030303;
+    width: fit-content;
+
+    color: #00eaff;
+    /* mouser hover color change*/
+    letter-spacing: 5px;
+    /* mouse hover letters are spacing*/
+}
+
+.stable {
+    position: absolute;
+   
+    top: 20vh;
+    right: 25vh;
+    color:black;
+
+
+
+}
+
+th {
+    padding: 6vh;
+   
+    max-height: 1vh;
+    color:white;
+
+}
+
+/*addstudent button*/
+.addstudent{
+    position: absolute;
+    right:148vh;
+    top:18vh;
+    background-color:white;
+}
+
+
+/*add student form*/
+.input{
+    display:flex;
+   
+   position: relative;
+   justify-content: center;
+   align-items: center;
+  left: 15vh;
+   bottom: 3vh;
+
+
+
+}
+ label{
+    color:whitesmoke;
+    
+ }
+ .form{
+    position: relative ;
+    display: flex;
+    justify-content: center;
+    top:15vh;
+ }
+ .fbutton{
+    position: relative;
+    left: 18vh;
+    top:4vh;
+ }
