@@ -145,11 +145,14 @@ th {
     color:white;
     position: relative;
     left: 6vh;
-    border: 1px solid white;
   }
   table{
     position: relative;
     top:2vh;
-    border:1px solid white;
+
+    
+  }
+  td{
+    border-bottom: 1px solid #ddd;
     
   }

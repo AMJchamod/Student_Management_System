@@ -22,12 +22,12 @@
 
     <div class="head">menu</div>
     <ol>
-    <li><a id="list" href="dashbord.php"> Home </a> </li>
+      <li><a id="list" href="dashbord.php"> Home </a> </li>
       <li><a id="list" href="maths.php"> Maths </a> </li>
       <li><a id="list" href="it.php"> IT </a> </li>
       <li><a id="list" href="science.php"> Science</a> </li>
       <li><a id="list" href="english"> English </a> </li>
-      <li><a id="list" href="histort.php"> History </a> </li>
+      <li><a id="list" href="history.php"> History </a> </li>
 
 
     </ol>
@@ -43,6 +43,8 @@
         <th>Contact</th>
         <th>Subject</th>
         <th>Gender</th>
+        <th>Action</th>
+
 
       </tr>
       <tbody>
@@ -62,9 +64,12 @@
                      <td> " . $record['Contact'] . " </td>
                     <td>" . $record['Subject'] . "</td>
                     <td> " . $record['Gender'] . " </td>
+                    <td><a href='update.php'>Link Text</a></td>
+                    <td><a href='addstudent.php'>Delete</a></td>
                   </tr>";
 
           }
+               
 
         } else {
           echo ('fuck');
