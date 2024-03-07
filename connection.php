@@ -10,6 +10,6 @@ $connection = mysqli_connect('localhost' ,'root' ,'','class');
 if(mysqli_connect_errno()){
     die("Connection fail")  . mysqli_error();
 }
-    echo("connection success");
+  
   
 ?>

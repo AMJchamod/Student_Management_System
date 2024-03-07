@@ -30,6 +30,8 @@
             </form> 
           <?php
           include 'connection.php';
+
+          if (isset($_POST["fn"], $_POST["con"], $_POST["school"], $_POST["grade"], $_POST["subject"], $_POST["gender"])) {
          
            $firstname=$_POST["fn"];
            $contact=$_POST["con"];
@@ -43,16 +45,16 @@
            $result=mysqli_query($connection,$query);
 
            if($result){
-                echo("success");
+              
             
 
            }else{
             echo("fail");
            }
-       
+          }
           ?>
-            <a href="dashbord.php">
-               Back
+            <a id="back" href="dashbord.php">
+              <- Back
              </a>
 
 

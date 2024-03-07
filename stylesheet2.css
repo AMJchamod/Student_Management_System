@@ -7,7 +7,7 @@ body {
 }
 
 .menulist {
-    max-width: 21%;
+    max-width: 19%;
     background-color: black;
     max-height: 120%;
    
@@ -36,6 +36,7 @@ ol {
     text-decoration: none;
     display: flex;
     padding: 4vh;
+    color:white;
 
 }
 
@@ -124,3 +125,31 @@ th {
     left: 18vh;
     top:4vh;
  }
+
+ #back{
+    position:absolute;
+    border: 1px solid white;
+    text-decoration: none;
+    background:black;
+    color:white;
+    width:10vh;
+    padding: 2vh;
+    padding-left:8vh;
+    left: 5vh;
+    bottom:100%;
+    border-radius: 80%;
+ }
+
+ /*homepage table row*/
+  .drow{
+    color:white;
+    position: relative;
+    left: 6vh;
+    border: 1px solid white;
+  }
+  table{
+    position: relative;
+    top:2vh;
+    border:1px solid white;
+    
+  }
