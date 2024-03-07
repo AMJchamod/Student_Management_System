@@ -57,6 +57,7 @@
           /*checking how many raws in the table*/
           /* echo mysqli_num_rows($result);*/
           while ($record = mysqli_fetch_assoc($result)) {
+              $data= $record['Id'];  
         
             echo "  <tr  class='drow'>  <td>" . $record['Id'] . " </td>
                     <td>" . $record['Name'] . "</td>
@@ -65,28 +66,33 @@
                     <td>" . $record['Subject'] . "</td>
                     <td> " . $record['Gender'] . " </td>
                     <td><a href='update.php'>Link Text</a></td>
-                    <td><a href='addstudent.php'>Delete</a></td>
-                  </tr>";
+                    <td><a href='dashbord.php?id=$data' .>Delete</a></td>   
+                  </tr>"; /*send  veriable data */
 
           }
                
 
         } else {
-          echo ('fuck');
+          echo ('fail');
         }
-
-
-
-
-
-
-
 
         ?>
       </tbody>
 
     </table>
+  
   </div>
+  <?php
+  /* Delete quary*/
+include "connection.php";
+if (isset($_GET['id'])) {
+    $ID = $_GET['id'];
+    $query = "DELETE FROM Student WHERE Id='$ID'";
+    $result = mysqli_query($connection, $query);
+    
+}
+?>
+
 
 </body>
 
