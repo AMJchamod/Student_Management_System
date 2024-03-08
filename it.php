@@ -13,9 +13,7 @@
 </head>
 
 <body>
-  <a href="addstudent.php">
-   <button class ="addstudent">Addstudent</button>
-</a>
+
   <div class="menulist">
 
 
@@ -42,11 +40,39 @@
         <th>Contact</th>
         <th>Subject</th>
         <th>Gender</th>
-        <th>School</th>
+        <th>Action</th>
       </tr>
       <tbody>
        
-           
+      <?php
+include("connection.php");
+$query = "SELECT * FROM student WHERE Subject='it'";
+$result = mysqli_query($connection, $query);
+if ($result) {
+  /*checking how many raws in the table*/
+  /* echo mysqli_num_rows($result);*/
+  while ($record = mysqli_fetch_assoc($result)) {
+      $data= $record['Id'];  
+
+    echo "  <tr  class='drow'>  <td>" . $record['Id'] . " </td>
+            <td>" . $record['Name'] . "</td>
+             <td>" . $record['School'] . " </td>
+             <td> " . $record['Contact'] . " </td>
+            <td>" . $record['Subject'] . "</td>
+            <td> " . $record['Gender'] . " </td>
+            <td><a  href='update.php' id='updateb'>Update</a></td>
+            <td><a href='dashbord.php?id=$data' id='deleteb' .>Delete</a></td>   
+          </tr>"; /*send  veriable data */
+
+  }
+       
+
+} else {
+  echo ('faill');
+}
+
+?>
+</tbody>
 
       
 

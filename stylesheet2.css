@@ -10,7 +10,7 @@ body {
     max-width: 19%;
     background-color: black;
     max-height: 120%;
-   
+
 }
 
 .menulist .head {
@@ -22,7 +22,6 @@ body {
     text-align: center;
     letter-spacing: 30x;
     background: linear-gradient(30deg, #df0155, #ed4901)
-    
 }
 
 ol {
@@ -36,7 +35,7 @@ ol {
     text-decoration: none;
     display: flex;
     padding: 4vh;
-    color:white;
+    color: white;
 
 }
 
@@ -69,12 +68,18 @@ ol li:hover {
     /* mouse hover letters are spacing*/
 }
 
+table {
+    position: relative;
+    top: 2vh;
+}
+
 .stable {
     position: absolute;
-   
+
     top: 20vh;
-    right: 25vh;
-    color:black;
+    right: 21vh;
+    color: black;
+
 
 
 
@@ -82,77 +87,99 @@ ol li:hover {
 
 th {
     padding: 6vh;
-   
+
     max-height: 1vh;
-    color:white;
+    color: white;
+
+}
+
+td {
+    border-bottom: 1px solid #ddd;
+    padding: 1vh;
+
 
 }
 
 /*addstudent button*/
-.addstudent{
+.addstudent {
     position: absolute;
-    right:148vh;
-    top:18vh;
-    background-color:white;
+    right: 148vh;
+    top: 18vh;
+    background-color: white;
 }
 
 
 /*add student form*/
-.input{
-    display:flex;
-   
-   position: relative;
-   justify-content: center;
-   align-items: center;
-  left: 15vh;
-   bottom: 3vh;
+.input {
+    display: flex;
+
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    left: 15vh;
+    bottom: 3vh;
 
 
 
 }
- label{
-    color:whitesmoke;
-    
- }
- .form{
-    position: relative ;
+
+label {
+    color: whitesmoke;
+
+}
+
+.form {
+    position: relative;
     display: flex;
     justify-content: center;
-    top:15vh;
- }
- .fbutton{
+    top: 15vh;
+  
+   
+}
+.formborder{
+    border:1px solid white;
+}
+
+.fbutton {
     position: relative;
     left: 18vh;
-    top:4vh;
- }
+    top: 4vh;
+}
 
- #back{
-    position:absolute;
+#back {
+    position: absolute;
     border: 1px solid white;
     text-decoration: none;
-    background:black;
-    color:white;
-    width:10vh;
+    background: black;
+    color: white;
+    width: 10vh;
     padding: 2vh;
-    padding-left:8vh;
+    padding-left: 8vh;
     left: 5vh;
-    bottom:100%;
+    bottom: 100%;
     border-radius: 80%;
- }
+}
 
- /*homepage table row*/
-  .drow{
-    color:white;
+/*homepage table row*/
+.drow {
+    color: white;
     position: relative;
     left: 6vh;
-  }
-  table{
-    position: relative;
-    top:2vh;
 
-    
-  }
-  td{
-    border-bottom: 1px solid #ddd;
-    
-  }
+}
+
+#updateb {
+    border: 1px solid red;
+    background-color: white;
+    border-radius: 10%;
+    text-decoration: none;
+}
+
+#deleteb {
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 10%;
+
+}

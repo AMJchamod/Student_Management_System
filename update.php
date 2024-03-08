@@ -56,7 +56,7 @@ if (isset($_POST["ID"], $_POST["fn"], $_POST["con"], $_POST["school"], $_POST["g
 
 mysqli_close($connection);
 ?>
-
+ 
             <a id="back" href="dashbord.php">
               <- Back
              </a>

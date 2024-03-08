@@ -26,7 +26,7 @@
       <li><a id="list" href="maths.php"> Maths </a> </li>
       <li><a id="list" href="it.php"> IT </a> </li>
       <li><a id="list" href="science.php"> Science</a> </li>
-      <li><a id="list" href="english"> English </a> </li>
+      <li><a id="list" href="english.php"> English </a> </li>
       <li><a id="list" href="history.php"> History </a> </li>
 
 
@@ -65,8 +65,8 @@
                      <td> " . $record['Contact'] . " </td>
                     <td>" . $record['Subject'] . "</td>
                     <td> " . $record['Gender'] . " </td>
-                    <td><a href='update.php'>Link Text</a></td>
-                    <td><a href='dashbord.php?id=$data' .>Delete</a></td>   
+                    <td><a  href='update.php' id='updateb'>Update</a></td>
+                    <td><a href='dashbord.php?id=$data' id='deleteb' .>Delete</a></td>   
                   </tr>"; /*send  veriable data */
 
           }
@@ -89,6 +89,7 @@ if (isset($_GET['id'])) {
     $ID = $_GET['id'];
     $query = "DELETE FROM Student WHERE Id='$ID'";
     $result = mysqli_query($connection, $query);
+    header('Location:dashbord.php');//reload page
     
 }
 ?>
